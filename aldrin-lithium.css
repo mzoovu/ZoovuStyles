@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Overwrite the default font family styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#zoovu-assistant section,
+#zoovu-assistant span {
+	font-family: 'Kanit', sans-serif !important;
+}
+
+html,
+p,
+ul li {
+	font-family: 'Kanit', sans-serif !important;
+}
+
+body {
+	font-family: 'Kanit', sans-serif !important;
+	overflow-x: hidden;
+	margin: 0;
+	background: #f5f5f5;
+	padding-bottom: 50px;
+}
+
+button,
+a {
+	font-family: 'Kanit', sans-serif !important;
+	transition: all 0.3s;
+}
+
+
+/* Set Outer Template To Full Width */
+
+#zoovu-assistant .using-mouse {
+	width: 100%;
+	max-width: 100% !important;
+	padding: 0px;
+}
+
+#zoovu-assistant>div {
+	max-width: 100% !important;
+	padding: 0px;
+}
+
+#zoovu-assistant .questionnaire-section {
+	padding: 0px;
+}
+
+#zoovu-assistant .questionnaire-section>.container {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: flex;
+	flex-direction: column;
+}
+
+#zoovu-assistant .section-type--results_page .questionnaire-section>.container {
+	display: inline-table;
+	flex-direction: inherit;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+#zoovu-assistant .questions-wrapper i.question-icon {
+	display: none;
+}
+
+#zoovu-assistant .section-main-content .page-wrapper {
+	padding-top: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#zoovu-assistant .questionnaire-footer {
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+	order: 2;
+	width: 100%;
+}
+
+#zoovu-assistant .questions-wrapper .question-title {
+	text-align: left;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 1.1em;
+}
+
+#zoovu-assistant section .question-type-hint {
+	text-align: left;
+	font-weight: 300;
+	color: #484848;
+	margin-top: 15px;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .answers-wrapper {
+	display: flex;
+	justify-content: left;
+	flex-flow: inherit;
+	flex-wrap: wrap;
+	margin-left: -7px;
+	margin-right: -7px;
+}
+
+#zoovu-assistant .answers-wrapper .answer {
+	width: auto !important;
+	flex-basis: 50%;
+	padding: 8px;
+}
+
+#zoovu-assistant .questionnaire-footer span {
+	display: table;
+	width: 100%;
+	border-top: 1px solid #dddddd;
+	padding-top: 40px;
+}
+
+#zoovu-assistant .questionnaire-footer .powered {
+	display: none;
+}
+
+#zoovu-assistant .questionnaire-wrapper>.container {
+	max-width: 1366px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#zoovu-assistant .section-main-content p.page-title {
+	text-align: left;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .single-range-question-wrapper .slider-box {
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 22;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .single-range-question-wrapper .slider-footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .single-range-question-wrapper .slider-box .slider-footer div,
+#zoovu-assistant .questionnaire-section .questions-wrapper .single-range-question-wrapper .slider-box .slider-value {
+	color: #ffffff;
+}
+
+#zoovu-assistant .slider {
+	background: #dedede;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .single-range-question-wrapper .slider-box .slider-dot {
+	background: #bf1300;
+	border-color: #bf1300;
+	border-radius: 0px;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .single-range-question-wrapper .slider-box .slider-selected-range {
+	background: #bf1300;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .drop-down-list-input .custom-select-wrapper {
+	height: auto;
+	padding: 0px;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .drop-down-list-input .custom-select-wrapper .custom-select-container {
+	max-width: 400px;
+	margin-left: 0px;
+	margin-right: auto;
+	margin-bottom: 0px !important;
+	border-radius: 0px;
+	background: #ffffff;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .drop-down-list-input .custom-select-answer {
+	text-align: left;
+	color: #282828;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .drop-down-list-input .simplebar-content {
+	padding: 0px !important;
+	border-radius: 0px;
+}
+
+#zoovu-assistant .questionnaire-section .questions-wrapper .drop-down-list-input .simplebar-content .option {
+	text-align: left;
+	padding: 8px 30px 8px 30px;
+	border-radius: 0px;
+	color: #282828;
+}
+
+#zoovu-assistant .questionnaire-section .container .start-over-wrapper {
+	max-width: 1440px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	order: 3;
+	width: 100%;
+	margin-top: -52px;
+	position: relative;
+}
+
+#zoovu-assistant .section-type--results_page .questionnaire-section .container .start-over-wrapper {
+	margin-bottom: 0px;
+	margin: 0 auto;
+	z-index: 22;
+	position: relative;
+	padding-top: 40px;
+}
+
+#zoovu-assistant .section-type--results_page .questionnaire-section .container button.start-over-button:hover {
+	color: #113667;
+}
+
+#zoovu-assistant .page-selector-section {
+	position: relative;
+	z-index: 22;
+	background: #000000;
+}
+
+#zoovu-assistant .page-selector-section .page-selector-wrapper {
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1440px;
+	display: table;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+#zoovu-assistant .page-selector-section .page-selector-wrapper:after {
+	display: none;
+}
+
+#zoovu-assistant .page-selector-section .page-selector-wrapper:before {
+	content: 'Product Finder';
+	display: block;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 35px;
+	line-height: 1.1em;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+
+#zoovu-assistant .section-type--results_page .page-selector-section .page-selector-wrapper:before {
+	content: 'Results Found';
+}
+
+#zoovu-assistant section .page-selector-wrapper button.page-selector:not(:last-child) {
+	margin-right: 5px;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.page-selector {
+	width: 110px;
+	flex-grow: inherit;
+	border-bottom-width: 20px;
+	transform: skewX(-20deg);
+	border-color: #ffffff;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.page-selector:first-child {
+	margin-left: 5px !important;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.page-selector:first-child:after {
+	content: '';
+	transform: skewX(20deg);
+	background: #bf1300;
+	position: absolute;
+	height: 20px;
+	width: 26px;
+	left: -3px;
+	top: 0;
+	z-index: 2;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.page-selector.is-selected.visited,
+#zoovu-assistant section .page-selector-wrapper button.page-selector.visited {
+	border-color: #bf1300;
+}
+
+#zoovu-assistant .answer .answer-text:before {
+	content: '';
+	background: url(//assets-barracuda-zoovu.azureedge.net/zoovu/314b9839-0fd4-4334-bfb8-75765f790a07);
+	height: 22px;
+	width: 22px;
+	background-size: cover;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	display: none;
+	transform: translate(0%, -50%);
+}
+
+#zoovu-assistant .answer.is-selected .answer-text:before {
+	display: block;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer .answer-content {
+	border-radius: 0px;
+	background: #ffffff;
+	outline-offset: 0px;
+	outline: #dddddd solid 2px;
+	padding: 25px 40px 25px 30px;
+	border: none !important;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.9);
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:hover .answer-content,
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer.is-selected .answer-content {
+	outline: rgb(0, 0, 0) solid 3px;
+	box-shadow: rgb(0, 0, 0,0.7) 0px 0px 10px 0px;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer-selection-button {
+	display: none;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer .answer-text {
+	color: #333333 !important;
+	font-size: 18px;
+	font-weight: 400 !important;
+	text-align: left;
+	line-height: 1.2em;
+	width: 100%;
+}
+
+#zoovu-assistant button.navigation-back-button {
+	background: #ffffff;
+	color:#bf1300;
+	font-weight: 400 !important;
+	border-radius: 0px;
+	border-color:#bf1300;
+	font-size: 20px !important;
+	text-transform: capitalize;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: auto;
+	min-width: auto;
+}
+
+#zoovu-assistant button.navigation-next-button {
+	background: #bf1300;
+	color: #ffffff;
+	font-weight: 400 !important;
+	border-radius: 0px;
+	border-color: #bf1300;
+	font-size: 20px !important;
+	text-transform: capitalize;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	width: auto;
+	min-width: auto;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+#zoovu-assistant button.navigation-next-button:hover,
+#zoovu-assistant button.navigation-back-button:hover {
+	background: #333333!important;
+	border-color:#333333;
+	color: #ffffff;
+}
+
+#zoovu-assistant button.start-over-button {
+	background: #ffffff;
+	color:#bf1300;
+	font-weight: 400 !important;
+	border-radius: 0px;
+	border: 1px solid #bf1300;
+	font-size: 20px !important;
+	text-transform: capitalize;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 24px;
+	padding-right: 46px;
+	width: auto;
+	min-width: auto;
+}
+
+#zoovu-assistant button.start-over-button:after {
+	right: 21px;
+}
+
+#zoovu-assistant button.start-over-button:hover {
+	color: #ffffff !important;
+	background: #333333;
+  border-color:#333333;
+}
+
+#zoovu-assistant .product-footer a.product-button {
+	width: auto;
+	border-radius: 0px;
+	font-weight: 500;
+	font-size: 16px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background: #bf1300;
+	border-color: #bf1300;
+	text-transform: uppercase;
+}
+
+#zoovu-assistant .product-footer a.product-button:hover {
+	background: #113667;
+	border-color: #113667;
+}
+
+#zoovu-assistant .advice .advice-recommended {
+	border-top: 1px solid #dddddd;
+	padding-top: 40px;
+	margin-top: 30px;
+}
+
+#zoovu-assistant .advice-recommended .cluster-headline {
+	position: relative;
+	margin-top: 0px;
+	font-weight: 500;
+	margin-left: auto;
+	padding-top: 9px;
+	text-align: left !important;
+	color: #282828;
+}
+
+#zoovu-assistant .cluster-wrapper .sort-wrapper p {
+	color: #282828;
+}
+
+#zoovu-assistant .sort .sort-wrapper .sort-select {
+	border-radius: 0px;
+	border: 1px solid #282828;
+	color: #282828;
+}
+
+#zoovu-assistant .sort-select,
+#zoovu-assistant .sort-panel .option {
+	text-align: left;
+}
+
+#zoovu-assistant .sort-wrapper .sort-panel .option {
+	border-bottom-color: #dddddd;
+	text-transform: capitalize;
+	color: #282828;
+}
+
+#zoovu-assistant .sort-panel .option:hover,
+#zoovu-assistant .custom-select-wrapper .custom-select-container.is-open .custom-select-panel .option:hover {
+	color: #ffffff;
+	background: #bf1300;
+}
+
+#zoovu-assistant .sort-wrapper .sort-inside .sort-panel {
+	border: 1px solid #282828;
+	border-bottom: none;
+	border-top: none;
+}
+
+#zoovu-assistant .sort-wrapper .sort-inside.is-open .sort-panel {
+	border: 1px solid #282828;
+	border-top: none;
+}
+
+#zoovu-assistant .cluster .products-wrapper .product {
+	background: #ffffff;
+}
+
+#zoovu-assistant .advice-recommended .cluster a.product-name {
+	font-size: 26px;
+	font-weight: 500;
+	color: #282828;
+}
+
+#zoovu-assistant .advice-recommended .cluster .product-attributes-toggle {
+	font-weight: 400;
+	color: #113667;
+	padding-right: 5px !important;
+	font-size: 17px;
+}
+
+#zoovu-assistant .advice-recommended .cluster .product-attributes-toggle::after {
+	margin-left: 8px !important;
+}
+
+#zoovu-assistant .advice-recommended .cluster .product-compare-wrapper {
+	margin-top: 7px;
+}
+
+#zoovu-assistant .advice-recommended .cluster .product-compare-wrapper span {
+	color: #282828;
+}
+
+#zoovu-assistant .advice-recommended .cluster .product-footer .price {
+	font-size: 30px;
+	font-weight: 500;
+	color: #282828;
+}
+
+#zoovu-assistant .advice-recommended .cluster .product-properties .positive-property {
+	color: #666666;
+}
+
+#zoovu-assistant .advice-recommended .cluster .product-image {
+	max-width: 500px;
+}
+
+#zoovu-assistant .recommendation-navigation-buttons .advice-navigation-button {
+	border-radius: 0px;
+	border-color: #bf1300;
+	padding: 5px 9px;
+}
+
+#zoovu-assistant .recommendation-navigation-buttons .advice-navigation-button:hover,
+#zoovu-assistant .recommendation-navigation-buttons .advice-navigation-button.selected {
+	background: #333333;
+	color: #ffffff;
+	border-color: #333333 !important;
+}
+
+#zoovu-assistant .recommendation-navigation {
+	margin-top: 20px;
+}
+
+
+/* Questionnaire Dropdown Type Background Image */
+
+#zoovu-assistant .questionnaire-section__background {
+	display: none;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper.multi-answer {
+	max-width: 100% !important;
+	margin-left: 0;
+	margin-right: auto;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper.multi-answer .text-question-wrapper {
+	width: 50%;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper.multi-answer .text-question-wrapper:first-child {
+	padding-right: 30px;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper.multi-answer .text-question-wrapper .input-wrapper {
+	border-radius: 0px;
+	padding: 13px;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper.multi-answer .text-question-wrapper p {
+	padding-left: 0px !important;
+	padding-bottom: 8px !important;
+	font-size: 18px;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended {
+	max-width: 1440px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-top-products .top-product__header {
+	padding-left: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-weight: 500;
+	color: #282828;
+}
+
+#zoovu-assistant .section-main-content .advice-recommended .top-product.product {
+	background: #ffffff;
+	border: none;
+	margin-bottom: 60px;
+}
+
+#zoovu-assistant .section-main-content .advice-recommended .top-product.product .product-head .product-name {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 1.1em;
+	color: #282828;
+}
+
+#zoovu-assistant .section-main-content .advice-recommended .top-product.product .product-body li.positive-property {
+	color: #282828;
+}
+
+#zoovu-assistant .section-main-content .advice-recommended .top-product.product .product-body .product-attributes-toggle {
+	font-weight: 400;
+	color: #113667;
+	padding-right: 5px !important;
+	font-size: 17px;
+}
+
+#zoovu-assistant .section-main-content .advice-recommended .top-product.product .product-body .product-attributes-toggle::after {
+	margin-left: 8px !important;
+}
+
+#zoovu-assistant .section-main-content .advice-recommended .top-product.product .product-footer .price {
+	font-size: 30px;
+	font-weight: 500;
+	color: #282828;
+}
+
+#zoovu-assistant .section-main-content .advice-recommended .top-product.product .product-image .product-top-tile {
+	background: #bf1300;
+}
+
+.tippy-tooltip {
+	border-radius: 0px !important;
+	background-color: #bf1300 !important;
+}
+
+.tippy-arrow {
+	border-left: 8px solid #bf1300 !important;
+}
+
+@media screen and (max-width:768px) {
+	#zoovu-assistant .questions-wrapper .question-title {
+		font-size: 30px;
+	}
+	#zoovu-assistant .questions-wrapper .answers-wrapper .answer .answer-text {
+		font-size: 18px;
+	}
+	#zoovu-assistant .answers-wrapper .answer {
+		flex-basis: 50%;
+	}
+	#zoovu-assistant .advice .advice-recommended {
+		margin-top: 0;
+	}
+	#zoovu-assistant .questionnaire-footer span {
+		display: flex;
+		position: inherit;
+		background: transparent;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#zoovu-assistant .advice-recommended .cluster a.product-name {
+		font-size: 25px;
+	}
+	#zoovu-assistant .section-main-content .questions-wrapper.multi-answer .text-question-wrapper {
+		width: 100%;
+		padding-bottom: 0px;
+	}
+	#zoovu-assistant .section-main-content .questions-wrapper.multi-answer .text-question-wrapper:first-child {
+		padding-right: 0px;
+	}
+	#zoovu-assistant .section-type--results_page .questionnaire-section span.pages-navigation-wrapper {
+		position: inherit;
+		padding: 0;
+	}
+	#zoovu-assistant .questionnaire-section .container .start-over-wrapper {
+		margin-top: 2px;
+	}
+	#zoovu-assistant button.start-over-button {
+		margin-left: 0;
+	}
+}
+
+@media screen and (max-width:520px) {
+	#zoovu-assistant .questions-wrapper .question-title {
+		font-size: 25px;
+	}
+	#zoovu-assistant .answers-wrapper .answer {
+		flex-basis: 100%;
+		padding: 0px;
+	}
+}
+
+
+/* Footer */
+
+#zoovu-assistant .branding {
+	display: none;
+}
