@@ -1,0 +1,806 @@
+/* Vendor Styles
+  1. General
+  2. Header & Banner
+  3. Products Home Listing & Inner Results
+  4. Footer
+*/
+
+/* ===== General ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Overwrite the default font family styles */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+#zoovu-assistant section,
+#zoovu-assistant span {
+	font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+/* Set Outer Template To Full Width */
+#zoovu-assistant .using-mouse {
+	width: 100%;
+	max-width: 100%;
+}
+
+#zoovu-assistant .inner-box {
+	padding: 0px;
+}
+
+
+/* ===== Header & Banner ==== */
+
+/* Set Background For Header Progress Bar & Counter  */
+#zoovu-assistant .section-type--results_page section:nth-child(2) {
+	background: #f5f5f7;
+}
+
+#zoovu-assistant .inner-box section:nth-child(2),
+#zoovu-assistant .section-type--results_page .inner-box section:nth-child(2) {
+	background: transparent;
+}
+
+#zoovu-assistant .section-main-content {
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+#zoovu-assistant .questionnaire-wrapper{
+  background: url(https://www.atttv.com/idpassets/sales/uf/tv/cloud-dvr/297781_Story_Tile_FOMO-retina.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+    z-index: 222;
+}
+#zoovu-assistant .questionnaire-wrapper:after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0.65) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0.65) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0.65) 100%);
+    z-index: -1;
+}
+/* Set Template Container Max-Width */
+#zoovu-assistant .section-main-content .page-wrapper {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Styling Icon For Answer Wrapper */
+#zoovu-assistant .answers-wrapper .answer-image {
+	max-width: 75px;
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	padding: 10px;
+	display: inherit;
+	margin-bottom: 5px;
+	border-radius: 3px;
+}
+
+#zoovu-assistant .answer-image .image-element {
+	position: inherit !important;
+	border-radius: 0px;
+}
+
+/* Set Default Width For Answer Items Columns */
+@media screen and (min-width:980px){
+#zoovu-assistant .answer.normal-row {
+	width: 31% !important;
+}
+}
+
+@media screen and (max-width:768px){
+  #zoovu-assistant .answer.normal-row {
+	width: 100% !important;
+}
+}
+
+
+
+/* Answers Items At Center */
+#zoovu-assistant .answers-wrapper {
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* Header Pagination Step Items Styles */
+#zoovu-assistant .navigation-steps {
+  font-weight:600;
+	color: #1d2329 !important;
+	font-size: 17px;
+	margin-top: 0px;
+  top: 47px;
+}
+
+#zoovu-assistant svg.icon,
+#zoovu-assistant svg path {
+	fill: #1d2329;
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+#zoovu-assistant .pages-navigation-wrapper {
+	top: 5px;
+  max-width: 1279px;
+  margin: 0 auto;
+}
+
+/* Header Take Me To Back And Start Over For Answers Button Styles */
+#zoovu-assistant .navigation-back-button svg {
+	left: 0px;
+	position: relative;
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+#zoovu-assistant .navigation-back-button:hover svg {
+	left: -5px;
+}
+
+#zoovu-assistant .start-over-button svg {
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+}
+
+#zoovu-assistant .start-over-button:hover svg {
+	transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+#zoovu-assistant .navigation-back-button:hover svg path,
+#zoovu-assistant .start-over-button:hover svg path {
+	fill: #7c7c7c;
+}
+
+/* Add Spacing On Main Template Containers For Mobile View */
+@media screen and (max-width:768px){
+#zoovu-assistant .advice-recommended, #zoovu-assistant .answers-wrapper{
+  padding-left:10px;
+  padding-right:10px;
+}
+}
+
+
+/* ===== Products Home Listing & Inner Results ==== */
+
+/* Product Name Styling */
+#zoovu-assistant .answer-text{
+  font-weight:400;
+	color: #ffffff;
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  border-radius:3px;
+  background:#0057b9;
+  line-height:1.3em;
+  padding-top:30px;
+  padding-bottom:30px;
+  transform: scale(1);
+  box-shadow: rgb(0 0 0 / 10%) 0px 7px 40px 0px;
+  transition: all 0.3s ease 0s;
+}
+#zoovu-assistant .answer:hover .answer-text{
+  background:#1d2329;
+  transform: scale(1.05);
+}
+#zoovu-assistant .answer.is-selected .answer-text{
+   background:#1d2329;
+}
+#zoovu-assistant .answer .answer-info-text{
+  color:#282828;
+}
+/* Single Product Hover Heading Color Change */
+#zoovu-assistant .answer label:hover .answer-text {
+	background-position: right center !important;
+}
+
+#zoovu-assistant .filter-answers-wrapper .answer-text{
+  height: auto !important;
+}
+
+/* Product Left Filters Styles */
+#zoovu-assistant .filter-option input:checked ~ .radio-indicator{
+  border: 2px solid #0057b9;
+  background-color: #0057b9;
+}
+
+
+/* Default Headings Sytles With Animation Overlay */
+#zoovu-assistant .questions-wrapper p span,
+#zoovu-assistant .cluster-headline,
+#zoovu-assistant .advice-top-products .top-product__header {
+  color:#000000;
+	font-size: 38px;
+	font-weight: 600;
+	letter-spacing: 0px;
+	text-trasform: capitalize;
+	max-width: 852px;
+	display: inline-block;
+	line-height: 1.35em;
+}
+
+
+#zoovu-assistant .cluster-headline {
+	font-size: 28px;
+	padding-left: 5px;
+}
+
+/* Heading Font Size Controlls For Mobile Layout */
+@media screen and (max-width:768px){
+#zoovu-assistant .questions-wrapper p span,
+#zoovu-assistant .cluster-headline,
+  #zoovu-assistant .advice-top-products .top-product__header{
+    font-size:28px;
+  }
+ #zoovu-assistant .cluster-headline {
+    font-size: 24px;
+    padding-left: 5px;
+  }
+}
+
+#zoovu-assistant .question-image p span {
+	background: linear-gradient(-45deg, #7bffec, #ffa9d8, #7bffec);
+	background-size: 400% 400%;
+	animation: gradient-fill-2 15s ease infinite;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes gradient-fill-2 {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#zoovu-assistant .question-type-hint {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	color: #6e6e6e;
+}
+
+/* Question Skip & Preferences Button Styles */
+#zoovu-assistant .navigation-skip-button,
+#zoovu-assistant .navigation-next-button {
+	text-transform: uppercase;
+	border-radius: 4px;
+	font-weight: 500;
+	font-family: Poppins;
+	padding: 17px 5px;
+	background: #337ACE;
+	border: 2px solid #337ACE;
+	font-size: 16px;
+	color: #ffffff;
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  font-family: 'Poppins', sans-serif !important;
+ box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+}
+
+/* Question Skip & Preferences Button Hover Styles
+ */
+#zoovu-assistant .navigation-skip-button:hover,
+#zoovu-assistant .navigation-next-button:hover {
+	background: #102641;
+	color: #ffffff;
+	border: 2px solid #102641;
+}
+
+#zoovu-assistant .page-selector button.visited.is-selected span,
+button.visited.page-selector {
+	border-color: #0057b9 !important;
+}
+
+.cluster-wrapper {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*  Single Product Listing Outer Box Styles */
+#zoovu-assistant .products-wrapper .product {
+	border: 1px solid #dddddd;
+	position: relative;
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+	border-radius: 3px;
+	background: #ffffff;
+	margin-bottom: 35px;
+}
+
+/*  Single Product Listing Hover Styles */
+#zoovu-assistant .products-wrapper .product:hover {
+	border: 1px solid #f6f6f6;
+	box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+#zoovu-assistant .product-image {
+	margin-top: 60px;
+}
+
+/* Product Name Styles */
+#zoovu-assistant .product-name {
+	position: absolute;
+	left: -1px;
+	background: #0057b9;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif !important;
+	font-size: 16px;
+	top: 0;
+	padding: 13px 18px;
+	font-weight: 400;
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+	width: 100.5%;
+	border-radius: 3px 3px 0px 0px;
+}
+
+#zoovu-assistant .products-wrapper .product:hover .product-name {
+	background: #333333;
+}
+
+#zoovu-assistant .product-footer {
+	justify-content: space-between;
+	flex-flow: wrap;
+}
+
+/* Go To Product & Add To Cart Button Styles With Hover Effects*/
+#zoovu-assistant .product-footer a.product-button,
+#zoovu-assistant .product-footer button.product-button {
+	width: auto;
+  min-width: auto;
+	font-size: 15px;
+	display: inline-block;
+	margin: 22px 0px 0px 0px;
+	font-weight: 500;
+	font-family: 'Poppins' !important;
+	border-radius: 4px;
+	border: none;
+	padding: 7px 15px;
+  background: #337ACE;
+  color:#ffffff;
+}
+
+#zoovu-assistant .product-footer button.product-button {
+	transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -ms-transition: 0.5s;
+   background: #0057b9;
+  color:#ffffff;
+	margin: 22px 0px 0px 0px !important;
+}
+
+#zoovu-assistant .product-footer button.product-button:hover {
+   background: #102641;
+}
+
+#zoovu-assistant .product-footer a.product-button {
+  font-family: 'Poppins', sans-serif !important;
+	padding-top: 8px;
+	background: #337ACE;
+	border: 1px solid #337ACE;
+	color: #ffffff;
+		transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+}
+
+#zoovu-assistant .product-footer a.product-button:hover {
+	background: #102641;
+	color: #ffffff;
+	border: 1px solid #102641;
+}
+
+/* Product Pricing Style */
+#zoovu-assistant .price-regular.price {
+	font-weight: 600;
+	font-size: 26px;
+  text-decoration:none !important;
+}
+
+#zoovu-assistant .product-attributes-toggle {
+	border-top: 1px solid #dddddd;
+	width: 100%;
+	text-align: left;
+	padding-top: 11px;
+	margin-bottom: 10px;
+  color: #282828;
+  font-weight: 600;
+}
+
+/* Right Side Product Shorting Drop Down Panel Style */
+#zoovu-assistant .advice-recommended {
+	background: #f5f5f7;
+	padding-top: 80px;
+	margin-top: 60px;
+	padding-bottom: 80px;
+}
+
+#zoovu-assistant .container-0-0-53 .sort-wrapper .sort-select {
+	border-radius: 3px;
+	border: 1px solid #dddddd;
+}
+
+#zoovu-assistant .sort-wrapper .sort-panel .option{
+  border-bottom-color: #dddddd;
+}
+
+#zoovu-assistant .sort-wrapper .sort-panel{
+  border-color: #dddddd;
+}
+
+#zoovu-assistant .sort-select,
+#zoovu-assistant .sort-panel .option {
+	text-align: left;
+}
+
+#zoovu-assistant .sort-panel .option:hover {
+	color: #ffffff;
+	background: #0057b9;
+}
+
+#zoovu-assistant .sort-wrapper .sort-inside {
+	min-width: 225px;
+}
+
+#zoovu-assistant .cluster-wrapper .sort {
+	right: 0px;
+}
+
+#zoovu-assistant .products-wrapper {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.container-0-0-3 .products-wrapper::after{
+  display:none;
+}
+
+#zoovu-assistant .recommendation-navigation {
+	justify-content: center;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Pagination Product Buttons Styles */
+#zoovu-assistant .recommendation-navigation-buttons .navigation-next-button {
+	border: 1px solid #c6c6c6;
+	padding: 5px 22px;
+}
+
+#zoovu-assistant .recommendation-navigation-buttons .navigation-back-button {
+	border: 1px solid #c6c6c6;
+	padding: 5px 22px;
+	border-radius: 3px;
+	font-family: Poppins;
+	background: #ffffff;
+	font-size: 16px;
+	color: #282828;
+	transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+#zoovu-assistant .recommendation-navigation-buttons .navigation-back-button:hover {
+	background: #0057b9;
+	border: 2px solid #0057b9;
+	color: #ffffff;
+}
+
+#zoovu-assistant .recommendation-navigation-buttons .page-button,
+#zoovu-assistant .recommendation-navigation-buttons .gap-button {
+	border-radius: 3px;
+	background: #ffffff;
+	color: #282828;
+	border: 1px solid #d7d7d7;
+}
+
+#zoovu-assistant .recommendation-navigation-buttons .page-button:hover,
+#zoovu-assistant .recommendation-navigation-buttons .gap-button:hover {
+	background: #0057b9;
+	color: #ffffff;
+}
+
+#zoovu-assistant .sort-wrapper p {
+	color: #434343;
+}
+
+#zoovu-assistant .product-details {
+	padding-bottom: 30px;
+}
+
+/* Product Recommendation Info Details For Innter Items */
+#zoovu-assistant .advice-filters-wrapper,
+#zoovu-assistant .section-type--results_page .section-main-content .advice {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#zoovu-assistant .section-type--results_page .advice-recommended {
+	margin-top: 0px;
+	padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* Product Result Found Heading Style Set To Default */
+#zoovu-assistant .section-type--results_page .info-defails--with-properties .product-name {
+  font-family: 'Poppins', sans-serif !important;
+	width: 100%;
+	position: inherit;
+	background: transparent;
+	color: #282828;
+	text-align: left;
+	padding: 0px;
+	font-size: 20px;
+	font-weight: 500;
+	align-items: inherit;
+	display: block;
+}
+
+#zoovu-assistant .section-type--results_page .info-defails--with-properties button.add-to-cart-button {
+	margin-top: 11px !important;
+}
+
+#zoovu-assistant .section-type--results_page .advice-top-products {
+	flex: 3 1 0%;
+	border-bottom: 0px;
+}
+
+/* Product Left Side Drop Down Filter Styles */
+#zoovu-assistant .section-type--results_page .products-filters-wrapper {
+	border-bottom: 1px solid #dddddd;
+	margin-bottom: 46px;
+}
+
+/* Product Left Side Drop Down Filter Heading Styles */
+#zoovu-assistant .advice-top-products .top-product__header {
+	text-align: left;
+	font-size: 29px;
+	padding-left: 17px;
+	margin-bottom: 6px;
+}
+
+#zoovu-assistant .filters-title {
+	margin-top: 0;
+	margin-bottom: 29px;
+	font-weight: 600;
+	font-size: 21px;
+	color: #282828;
+}
+
+#zoovu-assistant .collapse-wrapper .collapse-header {
+	border-radius: 3px;
+	background: #ffffff;
+	border: 1px solid #6666;
+}
+
+#zoovu-assistant .top-product {
+	background: #ffffff;
+}
+
+#zoovu-assistant .product-image .product-top-tile {
+	left: 22px;
+	background: #0057b9;
+}
+
+/* Product Result Found Item Background Style */
+#zoovu-assistant .section-type--results_page .section-main-content {
+	background: #f5f5f7;
+}
+
+
+/* ===== Footer ==== */
+
+/* Footer Branding Styles */
+#zoovu-assistant .branding {
+	 margin: 0 auto;
+    background: #1d2329;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 32px;
+  margin-top:60px;
+}
+#zoovu-assistant .branding img {
+    filter: brightness(100);
+}
+@media screen and (max-width:768px){
+  #zoovu-assistant .products-wrapper{
+      justify-content: center;
+       max-width: 400px;
+      margin: 0 auto;
+  }
+  #zoovu-assistant .cluster-headline{
+    display:block;
+  }
+  #zoovu-assistant .pages-navigation-wrapper{
+     margin-top: -25px;
+  }
+}
+
+@media screen and (max-width:520px){
+  #zoovu-assistant .advice-top-products .top-product__header, #zoovu-assistant .cluster-headline{
+      font-size: 23px;
+  }
+}
+
+#zoovu-assistant .modal-container .product-name{
+    position: inherit;
+    display: block;
+    background: transparent;
+    padding-top: 0px;
+    font-weight: 600;
+    left: inherit;
+    width: 100%;
+    top: inherit;
+    color:#282828 !important;
+}
+#zoovu-assistant .modal-container .alternative-products-head{
+   color:#282828;
+}
+
+#zoovu-assistant .alternative-product .product-price{
+    color:#282828;
+    text-decoration:none !important;
+}
+#zoovu-assistant .advice .advice-recommended .image-wrapper{
+  width:50%;
+}
+#zoovu-assistant .advice .advice-recommended .info-details{
+  width:50%;
+  display:block;
+}
+#zoovu-assistant .advice .advice-recommended .info-details .product-details{
+  padding-left: 0;
+  padding-right: 0px;
+  paddomg-bottom:10px;
+}
+
+#zoovu-assistant .advice .advice-recommended .info-details .product-details, #zoovu-assistant .advice .advice-recommended .info-details .compare-button{
+  width:100%;
+}
+ #zoovu-assistant .advice-recommended .advice-top-products .product-details ul.product-properties{
+   -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+@media screen and (max-width:768px){
+  #zoovu-assistant .advice-recommended .advice-top-products .product-details ul.product-properties{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+@media screen and (max-width:980px){
+ #zoovu-assistant .advice .advice-recommended .image-wrapper, #zoovu-assistant .advice .advice-recommended .info-details{
+     width:100%;
+  }
+  #zoovu-assistant .product-image {
+    margin-top: 74px;
+    margin-bottom: 20px;
+    justify-content: left;
+  }
+  #zoovu-assistant .answer-text{
+     padding-top: 13px;
+     padding-bottom: 13px;
+     min-height: 90px !important;
+  }
+  #zoovu-assistant .answer .answer-info-text{
+    padding-bottom:0px;
+    height: auto;
+  }
+ #zoovu-assistant .answers-wrapper .answer label{
+     padding-bottom: 0;
+  }
+  #zoovu-assistant .answers-wrapper .answer{
+     margin-bottom: 10px;
+  }
+  #zoovu-assistant .section-main-content{
+     padding-bottom: 55px;
+  }
+}
+
+#zoovu-assistant .pages-navigation-wrapper button.navigation-back-button, #zoovu-assistant .pages-navigation-wrapper button.start-over-button{
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 500;
+  font-family: 'Poppins' !important;
+  padding: 15px 40px;
+  background: #337ACE;
+  border: 2px solid #337ACE;
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  box-shadow: 0 2px 7px rgba(0,0,0,0.3);
+}
+#zoovu-assistant .pages-navigation-wrapper button.navigation-back-button:hover, #zoovu-assistant .pages-navigation-wrapper button.start-over-button:hover{
+  background: #102641;
+  border: 2px solid #102641;
+}
+#zoovu-assistant .pages-navigation-wrapper button.navigation-back-button:after{
+  content:'Back';
+  font-family: 'Poppins', sans-serif !important;
+}
+#zoovu-assistant .pages-navigation-wrapper button.start-over-button:after{
+  content:'Restart';
+  font-family: 'Poppins', sans-serif !important;
+}
+#zoovu-assistant .pages-navigation-wrapper button.navigation-back-button svg, #zoovu-assistant .pages-navigation-wrapper button.start-over-button svg{
+  display:none;
+}
+
+@media screen and (max-width:980px){
+#zoovu-assistant .questionnaire-wrapper .page-selector-wrapper{
+     padding-bottom: 26px;
+  }
+  #zoovu-assistant .navigation-steps{
+     top: 13px;
+  }
+#zoovu-assistant .pages-navigation-wrapper button.navigation-back-button, #zoovu-assistant .pages-navigation-wrapper button.start-over-button{
+    padding: 8px 19px;
+    font-size: 13px !important;
+  }
+  #zoovu-assistant .questionnaire-wrapper{
+    background:transparent;
+  }
+}
+#zoovu-assistant .top-navigation{
+  padding-top:30px;
+}
+
+#zoovu-assistant .advice-recommended .advice-top-products .info-defails--with-properties .product-attributes-toggle, #zoovu-assistant .advice-recommended .advice-top-products .info-defails--with-properties .compare-button .product-compare-wrapper{
+  display:none;
+}
