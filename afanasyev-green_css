@@ -1,0 +1,830 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Overwrite the default font family styles */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#zoovu-assistant section,
+#zoovu-assistant span {
+	font-family: 'Kanit', sans-serif !important;
+	line-height: 1.3em;
+}
+
+html,
+p,
+ul li {
+	font-family: 'Kanit', sans-serif !important;
+}
+
+body {
+	font-family: 'Kanit', sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+	background: #eeeeee;
+}
+
+button,
+a {
+	font-family: 'Kanit', sans-serif !important;
+	text-transform: uppercase;
+}
+
+
+/* Set Outer Template To Full Width */
+
+#zoovu-assistant .using-mouse {
+	width: 100%;
+	max-width: 100% !important;
+	padding: 0px;
+}
+
+#zoovu-assistant>div {
+	max-width: 100% !important;
+	padding: 0px;
+}
+
+#zoovu-assistant .advice-recommended,
+#zoovu-assistant .page-wrapper {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#zoovu-assistant .section-type--questionnaire span.page-selector-wrapper {
+	padding-bottom: 0;
+	position: relative;
+	z-index: 22;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#zoovu-assistant .section-type--questionnaire .questions-wrapper .question-type-hint {
+	margin-top: -163px;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ffffff;
+	margin-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+#zoovu-assistant .section-type--questionnaire .top-navigation {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#zoovu-assistant .questions-wrapper .question-image p {
+	padding-top: 130px;
+	padding-bottom: 160px;
+	margin-top: -70px;
+}
+
+#zoovu-assistant .questions-wrapper .question-image::after {
+	background: rgba(35, 36, 40, 0.86);
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .answers-wrapper {
+	background: #ffffff;
+	box-shadow: 0px 4px 125px rgba(0, 0, 0, 0.25);
+	padding: 35px 20px 20px 20px;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 2;
+}
+
+@media screen and (max-width:1344px) {
+	#zoovu-assistant .section-main-content .questions-wrapper .answers-wrapper {
+		width: 90%;
+	}
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:after {
+	content: '';
+	height: calc(60px - 22px);
+	width: 1px;
+	background: #000000;
+	position: absolute;
+	left: 11px;
+	top: 11px;
+	transition: all 0.3s;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:before {
+	content: '';
+	height: 1px;
+	width: calc(60px - 22px);
+	background: #000000;
+	position: absolute;
+	left: 11px;
+	top: 11px;
+	transition: all 0.3s;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer label {
+	position: relative;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer label:after {
+	content: '';
+	height: calc(60px - 22px);
+	width: 1px;
+	background: #000000;
+	position: absolute;
+	right: 11px;
+	bottom: 11px;
+	transition: all 0.3s;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer label:before {
+	content: '';
+	height: 1px;
+	width: calc(60px - 22px);
+	background: #000000;
+	position: absolute;
+	right: 11px;
+	bottom: 10px;
+	transition: all 0.3s;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:hover label:before,
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer.is-selected label:before {
+	width: calc(100% - 22px);
+	background: #ffffff;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:hover label:after,
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer.is-selected label:after {
+	height: calc(100% - 22px);
+	background: #ffffff;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:hover:before,
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer.is-selected:before {
+	width: calc(100% - 22px);
+	background: #ffffff;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:hover:after,
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer.is-selected:after {
+	height: calc(100% - 22px);
+	background: #ffffff;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer .answer-content {
+	padding-bottom: 0px;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer .answer-text {
+	display: flex;
+	justify-content: center;
+	font-family: 'Playfair Display', serif !important;
+	font-weight: 600;
+	color: #000000;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer {
+	background: #64a9ab;
+	transition: all 0.3s;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:hover,
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer.is-selected {
+	background: #2A3742;
+	border-color: #2A3742 !important;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:hover .answer-text,
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer.is-selected .answer-text {
+	color: #ffffff;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer .answer-icon-wrapper {
+	bottom: -1px;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer .answer-icon-wrapper:after {
+	content: '';
+	width: 1px;
+	height: 0px;
+	background: #ffffff;
+	display: block;
+	margin: 0 auto;
+	transition: all 0.3s;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer .answer-icon-wrapper .answer-icon {
+	display: none;
+}
+
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer:hover .answer-icon-wrapper:after,
+#zoovu-assistant .questions-wrapper .answers-wrapper .answer.is-selected .answer-icon-wrapper:after {
+	height: 20px;
+}
+
+#zoovu-assistant .pages-navigation-wrapper {
+	max-width: 1279px;
+	margin: 40px auto 0px auto;
+	display: table;
+	text-align: center;
+	border-bottom: 0px !important;
+}
+
+#zoovu-assistant .section-type--results_page .top-navigation .pages-navigation-wrapper {
+	margin-top: 0px;
+	text-align: left;
+	margin-left: 0;
+}
+
+#zoovu-assistant .section-type--results_page .top-navigation {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 30px;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.page-selector {
+	border-bottom-width: 2px;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.page-selector.visited {
+	border-color: #64a9ab;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.visited span {
+	color: #64a9ab;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.page-selector:not(:last-child) {
+	margin-right: 10px;
+}
+
+#zoovu-assistant section .page-selector-wrapper button.visited.is-selected::before,
+#zoovu-assistant section .page-selector-wrapper button.visited.is-selected::after {
+	display: none;
+}
+
+#zoovu-assistant button.start-over-button,
+#zoovu-assistant button.navigation-next-button {
+	background: #296b6e;
+	color: #ffffff;
+	font-weight: 400;
+	border-radius: 0px;
+	border-color: #296b6e;
+	font-size: 18px !important;
+	min-width: auto;
+	padding-right: 44px;
+	outline: 1px solid #ffffff;
+	outline-offset: -7px;
+	letter-spacing: 1px;
+}
+
+#zoovu-assistant button.start-over-button:hover,
+#zoovu-assistant button.navigation-next-button:hover {
+	background: #64a9ab !important;
+	color: #ffffff;
+	border-color: #64a9ab;
+}
+
+#zoovu-assistant button.navigation-back-button {
+	background: #64a9ab;
+	color: #ffffff;
+	font-weight: 400;
+	border-radius: 0px;
+	border-color: #64a9ab;
+	font-size: 18px !important;
+	min-width: auto;
+	padding-left: 44px;
+	outline: 1px solid #ffffff;
+	outline-offset: -7px;
+	letter-spacing: 1px;
+}
+
+#zoovu-assistant .advice-recommended .recommendation-navigation button.navigation-next-button,
+#zoovu-assistant .advice-recommended .recommendation-navigation button.navigation-back-button {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#zoovu-assistant button.navigation-back-button:after,
+#zoovu-assistant button.navigation-back-button:before {
+	background: #ffffff;
+}
+
+#zoovu-assistant button.navigation-back-button:hover {
+	background: #296b6e !important;
+	color: #ffffff;
+	border-color: #296b6e;
+}
+
+#zoovu-assistant .section-type--questionnaire .top-navigation button {
+	margin-bottom: -55px;
+	z-index: 22;
+	bottom: -36px;
+	padding-right: 20px;
+	font-size: 15px !important;
+}
+
+@media screen and (max-width:1040px) {
+	#zoovu-assistant .section-type--questionnaire .top-navigation button {
+		bottom: 0px;
+		margin-bottom: 17px;
+		margin-top: 17px;
+	}
+}
+
+@media screen and (max-width:917px) {
+	#zoovu-assistant .section-type--questionnaire .top-navigation button {
+		margin-bottom: 40px;
+	}
+}
+
+#zoovu-assistant .section-type--results_page .top-navigation button {
+	padding-right: 20px;
+	padding-left: 20px;
+	font-size: 15px !important;
+	width: auto;
+}
+
+#zoovu-assistant .section-type--questionnaire .top-navigation button:after,
+#zoovu-assistant .section-type--results_page .top-navigation button:before,
+#zoovu-assistant .section-type--results_page .top-navigation button:after {
+	display: none;
+}
+
+#zoovu-assistant .advice {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 25px;
+}
+
+#zoovu-assistant .sort .sort-panel {
+	border-radius: 0px;
+}
+
+#zoovu-assistant .sort .sort-wrapper .sort-select {
+	border-radius: 0px;
+	border: 1px solid #dddddd;
+}
+
+#zoovu-assistant .sort-select,
+#zoovu-assistant .sort-panel .option {
+	text-align: left;
+}
+
+#zoovu-assistant .sort-wrapper .sort-panel .option {
+	border-bottom-color: #dddddd;
+	text-transform: capitalize;
+	color: #282828;
+}
+
+#zoovu-assistant .sort-panel .option:hover,
+#zoovu-assistant .custom-select-wrapper .custom-select-container.is-open .custom-select-panel .option:hover {
+	color: #ffffff;
+	background: #64a9ab;
+}
+
+#zoovu-assistant .advice-recommended .cluster-headline {
+	font-weight: 500;
+	line-height: 1.3em;
+	margin-bottom: 48px;
+	text-align: left !important;
+	margin-left: auto;
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 0px;
+	padding-top: 0;
+}
+
+@media screen and (min-width:1123px) {
+	#zoovu-assistant .advice-recommended .cluster-headline:after {
+		content: '';
+		height: 322%;
+		width: 1280px;
+		position: absolute;
+		left: -17px;
+		top: -26px;
+		background: #ffffff;
+		z-index: -1;
+		box-shadow: 0px 20px 22px rgba(0, 0, 0, 0.01);
+	}
+}
+
+@media screen and (max-width:1123px) {
+	#zoovu-assistant .advice-recommended .cluster-headline {
+		margin-bottom: 20px;
+		text-align: center !important;
+	}
+}
+
+@media screen and (min-width:980px) {
+	#zoovu-assistant .advice-recommended .cluster .products-wrapper {
+		margin-left: -32px;
+		margin-right: -28px;
+		padding-top: 25px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	#zoovu-assistant .advice-recommended .cluster .products-wrapper {
+		max-width: 349px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+/*  Single Product Listing Outer Box Styles */
+
+#zoovu-assistant .products-wrapper .product {
+	position: relative;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	border-radius: 0px;
+	background: #ffffff;
+	margin-bottom: 35px;
+	box-shadow: 0 2px 8px rgba(227, 228, 288, 0.0);
+	border: 1px solid #ededed;
+	padding: 18px;
+}
+
+#zoovu-assistant .products-wrapper .product:hover {
+	box-shadow: 0 2px 8px rgba(227, 228, 288, 1);
+	background: #ffffff;
+}
+
+#zoovu-assistant .cluster .products-wrapper .product-details {
+	padding: 0px;
+}
+
+#zoovu-assistant .cluster .products-wrapper .product-details .product-image {
+	order: 1;
+}
+
+#zoovu-assistant .cluster .products-wrapper .product-details .product-name {
+	order: 3;
+	margin-top: 15px;
+	font-size: 22px;
+	font-weight: 800;
+	line-height: 1.4em;
+	text-align: left;
+	text-transform: capitalize;
+	font-family: 'Playfair Display', serif !important;
+	min-height: auto;
+}
+
+#zoovu-assistant .cluster .product-properties li {
+	font-weight: 400;
+	text-transform: capitalize;
+}
+
+#zoovu-assistant .cluster .product-properties li.positive-property {
+	color: #282828 !important;
+}
+
+#zoovu-assistant .cluster .products-wrapper .product-details .properties-title {
+	order: 3;
+	padding-top: 10px;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.3em;
+	color: #6B6B6B;
+}
+
+#zoovu-assistant .cluster .products-wrapper .product-details .product-properties {
+	order: 4;
+}
+
+#zoovu-assistant .product-attributes-toggle {
+	border-top: 1px solid #dddddd;
+	width: 100%;
+	text-align: left;
+	padding-top: 8px;
+	margin-top: 13px;
+	margin-bottom: 8px;
+	color: #282828;
+	font-weight: 400;
+	order: 5;
+	text-transform: capitalize;
+}
+
+#zoovu-assistant .advice-recommended .cluster .products-wrapper .product-details .price-compare-wrapper {
+	order: 2;
+	text-align: left;
+}
+
+#zoovu-assistant .advice-recommended .cluster .products-wrapper .product-details .price-compare-wrapper span {
+	background: #64a9ab;
+	padding: 3px 20px;
+	color: #ffffff;
+	font-weight: 400 !important;
+	font-family: 'Kanit', sans-serif !important;
+	font-size: 26px;
+	text-transform: capitalize !important;
+	font-weight: 500;
+}
+
+#zoovu-assistant .advice-recommended .cluster .products-wrapper .product:nth-child(even) .product-details .price-compare-wrapper span {
+	background: #293640;
+}
+
+@media screen and (max-width:767px){
+  #zoovu-assistant .advice-recommended .cluster .products-wrapper .product-details .price-compare-wrapper span, #zoovu-assistant .advice-recommended .cluster .products-wrapper .product:nth-child(even) .product-details .price-compare-wrapper span{
+    background: transparent !important;
+    color: #da5f77;
+    padding:0px;
+  }
+}
+
+#zoovu-assistant .advice-recommended .cluster .products-wrapper .product-details .product-compare-wrapper {
+	order: 7;
+	margin-top: 3px;
+	text-align: left;
+	border-top: 1px solid #dddddd;
+	padding-bottom: 20px;
+	padding-top: 10px;
+}
+
+#zoovu-assistant .cluster .products-wrapper .product-details .product-compare-wrapper label span {
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.cluster .products-wrapper .product-details .product-compare-wrapper span {
+	text-transform: capitalize !important;
+}
+
+#zoovu-assistant .cluster .product-footer {
+	order: 7;
+	display: inline-block;
+}
+
+
+/* Go To Product & Add To Cart Button Styles With Hover Effects*/
+
+#zoovu-assistant .cluster .product-footer a.product-button {
+	font-size: 14px;
+	display: inline-block;
+	margin: 0px 0px 0px 0px;
+	font-weight: 500;
+	border-radius: 0px;
+	border: none;
+	padding: 14px 20px;
+	background: #64a9ab;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-top: 0px;
+	transition: all 0.3s;
+	letter-spacing: 1px;
+	outline: 1px solid #ffffff;
+	outline-offset: -7px;
+}
+
+#zoovu-assistant .cluster .product-footer a.product-button:hover {
+	background: #296b6e;
+	color: #ffffff;
+	outline: 1px solid #ffffff;
+}
+
+@media screen and (max-width:768px) {
+	#zoovu-assistant .cluster .product-footer a.product-button {
+		width: auto;
+	}
+}
+
+#zoovu-assistant .advice-recommended .cluster .products-wrapper .product:nth-child(even) .product-footer a.product-button {
+	background: #296b6e;
+}
+
+#zoovu-assistant .advice-recommended .cluster .products-wrapper .product:nth-child(even) .product-footer a.product-button:hover {
+	background: #64a9ab;
+}
+
+#zoovu-assistant .advice-recommended .recommendation-navigation {
+	text-align: center;
+}
+
+.answer-info-text-trigger {
+	background-color: #3f5261;
+}
+
+#zoovu-assistant .tooltip .tooltip-inner {
+	background-color: #64a9ab;
+	color: #ffffff;
+	border-radius: 0px;
+	font-family: 'Kanit', sans-serif !important;
+	font-weight: 400 !important;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .custom-select-wrapper {
+    max-width: 549px;
+    margin: 0 auto;
+    margin-top: -95px;
+    position: relative;
+    z-index: 22;
+    padding: 50px 20px;
+    width: 90%;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .custom-select-wrapper::before {
+	background-color: #ffffff;
+	box-shadow: 0px 4px 125px rgba(0, 0, 0, 0.25);
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .custom-select-wrapper .custom-select-answer {
+	font-weight: 400;
+	border-radius: 0px;
+	text-align: left;
+	font-family: 'Kanit', sans-serif !Important;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .custom-select-wrapper .custom-select-panel .option {
+	text-align: left;
+	font-family: 'Kanit', sans-serif !important;
+	font-weight: 400 !important;
+	padding-left: 28px;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .custom-select-panel {
+	border-radius: 0px;
+	padding-left: 0;
+	background: #ffffff;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .single-slider-question-wrapper {
+	padding-top: 42px;
+}
+
+#zoovu-assistant .section-main-content .questions-wrapper .single-slider-question-wrapper .slider-box,
+#zoovu-assistant .questionnaire-wrapper .section-main-content .questions-wrapper.multi-answer {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 50px 30px;
+	margin-top: 42px;
+	background: #ffffff;
+	box-shadow: 0px 4px 125px rgba(0, 0, 0, 0.25);
+  width:90%;
+}
+
+#zoovu-assistant .section-main-content .page-wrapper p.page-title {
+	padding-top: 30px;
+}
+
+#zoovu-assistant .questions-wrapper.multi-answer>div.text-question-wrapper {
+	width: 50%;
+}
+
+@media screen and (max-width:668px){
+#zoovu-assistant .questions-wrapper.multi-answer>div.text-question-wrapper {
+	width: 100%;
+}
+  #zoovu-assistant .questions-wrapper.multi-answer > div.text-question-wrapper:first-child{
+    margin-bottom:15px;
+  }
+}
+
+#zoovu-assistant .questions-wrapper.multi-answer div.text-question-wrapper .input-wrapper {
+	border: 1px solid #dddddd;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product {
+	width: 100%;
+	position: relative;
+	margin-bottom: 69px;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .product-details {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+
+@media screen and (min-width:768px) {
+	#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .image-wrapper {
+		width: 50%;
+		border: 1px solid #dddddd;
+	}
+	#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .product-details {
+		width: 50%;
+	}
+	#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .product-footer {
+		position: absolute;
+		bottom: 15px;
+		z-index: 22;
+		width: calc(100% - 15px - 50%);
+		left: 15px;
+		text-align: center;
+	}
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product:before {
+	background-color: #ffffff;
+	box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.20);
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product .product-image {
+	min-height: 394px;
+}
+
+@media screen and (max-width: 767px) {
+	#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product .product-image {
+		min-height: unset;
+	}
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product .product-image a {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product a.product-button {
+	font-size: 17px;
+	font-weight: 500;
+	border-radius: 0px;
+	border: none;
+	padding: 20px 20px;
+	background: #64a9ab;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-top: 0px;
+	transition: all 0.3s;
+	letter-spacing: 1px;
+	outline: 1px solid #ffffff;
+	outline-offset: -7px;
+	width: 100%;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product a.product-button:hover {
+	background: #296b6e;
+	color: #ffffff;
+	outline: 1px solid #ffffff;
+}
+
+#zoovu-assistant .advice-top-products .top-product__header {
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 1.2em;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product .product-details .product-name {
+	text-transform: capitalize;
+	font-size: 30px;
+	line-height: 1.3em;
+  font-weight:400;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product .product-details .price-regular.price {
+	color: #282828;
+	font-size: 40px;
+	font-weight: 400;
+  font-family: 'Kanit', sans-serif !important;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product .product-details .properties-title {
+	font-weight: 300;
+	font-size: 17px;
+}
+
+#zoovu-assistant .section-type--results_page .advice .advice-recommended .advice-top-products .top-product .product-details .product-compare-wrapper label {
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+/* ===== Footer ==== */
+
+
+/* Footer Branding Styles */
+
+#zoovu-assistant .branding {
+	margin: 0 auto;
+	background: #293640;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	padding: 15px 30px;
+	margin-top: 60px;
+}
+
+#zoovu-assistant .branding img {
+	filter: brightness(100);
+}
+afanasyev-green_css.css
+Displaying afanasyev-green_css.css.
